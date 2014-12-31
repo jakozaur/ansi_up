@@ -1,7 +1,7 @@
 Package.describe({
   name: 'jakozaur:ansi-up',
   summary: 'Convert ANSI color escape codes to HTML',
-  version: '1.1.2_1',
+  version: '1.1.2_2',
   git: 'https://github.com/jakozaur/ansi_up'
 });
 
