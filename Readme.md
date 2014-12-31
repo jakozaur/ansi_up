@@ -17,6 +17,26 @@ Into this browser output:
 
 ![](https://raw.github.com/drudru/ansi_up/master/sample.png)
 
+## Meteor 
+```shell
+    meteor add jakozaur:ansi-up
+```
+
+`ansi_up` is available both on server and client.
+```javascript
+   Template.example.helpers({
+     code: function () {
+       var txt  = "\n\n\033[1;33;40m 33;40  \033[1;33;41m 33;41  \033[1;33;42m 33;42  \033[1;33;43m 33;43  \033[1;33;44m 33;44  \033[1;33;45m 33;45  \033[1;33;46m 33;46  \033[1m\033[0\n\n\033[1;33;42m >> Tests OK\n\n"
+       return ansi_up.ansi_to_html(ansi_up.escape_for_html(txt_);
+     }
+   });
+```
+
+In templates:
+```
+    {{{ code }}}
+```
+
 ## Browser Example
 
 ```HTML
